@@ -73,7 +73,7 @@
       .saldo-texto {
         font-size: 0.88rem;
       }
-      .balance-box-small {
+      .-box-small {
         font-size: 0.8rem;
         min-width: 100px;
         padding: 0.32rem 0.5rem;
@@ -223,7 +223,7 @@
  <main class="w-full max-w-2xl mx-auto flex flex-col items-center">
     <div class="caixa-saldo" id="caixaSaldo03">
       <span class="saldo-texto">
-        Post the videos for your payments to be sent.
+        Publique los videos para que se envíen sus pagos.
       </span>
       <span id="balance03" class="balance-box-small">SALDO: U$ 31.45</span>
     </div>
@@ -330,26 +330,26 @@
 
   function startBalance01() {
     clearInterval(interval1);
-    document.getElementById('balance01').textContent = `BALANCE: U$ ${balance1.toFixed(2)}`;
+    document.getElementById('balance01').textContent = `SALDO: U$ ${balance1.toFixed(2)}`;
     interval1 = setInterval(() => {
       balance1 *= 1.03;
-      document.getElementById('balance01').textContent = `BALANCE: U$ ${balance1.toFixed(2)}`;
+      document.getElementById('balance01').textContent = `SALDO: U$ ${balance1.toFixed(2)}`;
     }, stepTime);
   }
   function startBalance02() {
     clearInterval(interval2);
-    document.getElementById('balance02').textContent = `BALANCE: U$ ${balance2.toFixed(2)}`;
+    document.getElementById('balance02').textContent = `SALDO: U$ ${balance2.toFixed(2)}`;
     interval2 = setInterval(() => {
       balance2 *= 1.03;
-      document.getElementById('balance02').textContent = `BALANCE: U$ ${balance2.toFixed(2)}`;
+      document.getElementById('balance02').textContent = `SALDO: U$ ${balance2.toFixed(2)}`;
     }, stepTime);
   }
   function startBalance03() {
     clearInterval(interval3);
-    document.getElementById('balance03').textContent = `BALANCE: U$ ${balance3.toFixed(2)}`;
+    document.getElementById('balance03').textContent = `SALDO: U$ ${balance3.toFixed(2)}`;
     interval3 = setInterval(() => {
       balance3 *= 1.03;
-      document.getElementById('balance03').textContent = `BALANCE: U$ ${balance3.toFixed(2)}`;
+      document.getElementById('balance03').textContent = `SALDO: U$ ${balance3.toFixed(2)}`;
     }, stepTime);
   }
   // Chama o saldo nas etapas corretas
@@ -413,7 +413,7 @@
       videoDiv.className = "bg-[#18181b] rounded-xl px-5 py-4 video-box flex flex-col justify-start items-start shadow relative";
       videoDiv.innerHTML = `
         <span class="video-label-pink">Vídeo ${i}</span>
-        <span class="processed-label mt-2">✅ PROCESSED</span>
+        <span class="processed-label mt-2">✅ PROCESADO</span>
       `;
       container.appendChild(videoDiv);
     }
