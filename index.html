@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>*TIKTOK ROBOT</title>
+  <title>TIKTOK ROBOT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -135,40 +135,40 @@
   <div class="w-full max-w-md sm:max-w-lg flex flex-col items-center justify-center px-2 sm:px-4 py-6 space-y-4 bg-black rounded-xl shadow-lg">
     <div class="caixa-saldo" id="caixaSaldo01">
       <span class="saldo-texto">
-        Congratulations, you have achieved your first earnings.
+        Felicidades, has logrado tus primeras ganancias.
       </span>
-      <span id="balance01" class="balance-box-small">BALANCE: U$ 10.75</span>
+      <span id="balance01" class="balance-box-small">SALDO: U$ 10.75</span>
     </div>
     <img src="imagens/logo.png" alt="Logo"
          class="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto block"
          style="margin-top: 0.2px; margin-bottom: 0.2px;" />
-    <h2 class="text-center text-2xl font-semibold mt-2 w-full">🎥 VIDEO PANEL</h2>
+    <h2 class="text-center text-2xl font-semibold mt-2 w-full">🎥 PANEL DE VIDEO</h2>
     <div class="bg-[#18181b] rounded-xl p-4 space-y-2 mt-4 w-full">
       <div id="toggle-handle" class="flex justify-between items-center cursor-pointer">
-        <label class="font-bold text-lg">Enter your TikTok</label><span>﹀</span>
+        <label class="font-bold text-lg">Ingrese su TikTok</label><span>﹀</span>
       </div>
-      <input id="handle" type="text" placeholder="@your_tiktok_handle" class="w-full bg-[#1f1f1f] p-3 rounded-md focus:outline-none hidden" />
+      <input id="handle" type="text" placeholder="@su_tiktok_nombre" class="w-full bg-[#1f1f1f] p-3 rounded-md focus:outline-none hidden" />
     </div>
     <div class="bg-[#18181b] rounded-xl p-4 space-y-4 mt-4 w-full">
       <div id="toggle-types" class="flex justify-between items-center cursor-pointer">
-        <label class="font-bold text-lg">Select video type</label><span>﹀</span>
+        <label class="font-bold text-lg">Seleccione el tipo de video</label><span>﹀</span>
       </div>
       <div id="types-wrapper" class="rounded-lg p-3 space-y-3 hidden">
         <div id="types-options" class="grid grid-cols-2 gap-2">
-          <button class="video-type option-btn bg-[#1a1a1a]">Motivational</button>
-          <button class="video-type option-btn bg-[#1a1a1a]">Comedy</button>
-          <button class="video-type option-btn bg-[#1a1a1a]">Curiosities</button>
-          <button class="video-type option-btn bg-[#1a1a1a]">Reactions</button>
-          <button class="video-type option-btn comment-replies bg-[#1a1a1a]" style="grid-column: span 1 / span 1;">Comment Replies</button>
-          <button class="video-type option-btn bg-[#1a1a1a]">Reviews</button>
-          <button class="video-type option-btn bg-[#1a1a1a]">Trends</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Motivacional</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Comedia</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Curiosidades</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Reacciones</button>
+          <button class="video-type option-btn comment-replies bg-[#1a1a1a]" style="grid-column: span 1 / span 1;">Respuestas a Comentarios</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Reseñas</button>
+          <button class="video-type option-btn bg-[#1a1a1a]">Tendencias</button>
         </div>
-        <p id="video-count" class="text-gray-400 text-sm hidden">Selected: 0</p>
+        <p id="video-count" class="text-gray-400 text-sm hidden">Seleccionados: 0</p>
       </div>
     </div>
     <div class="bg-[#18181b] rounded-xl p-4 space-y-4 mt-4 w-full">
       <div id="toggle-count" class="flex justify-between items-center cursor-pointer">
-        <label class="font-bold text-lg">How many videos to post per day</label><span>﹀</span>
+        <label class="font-bold text-lg">Cuántos videos publicar por día</label><span>﹀</span>
       </div>
       <div id="count-wrapper" class="rounded-lg p-3 space-y-3 hidden">
         <div id="count-options" class="grid grid-cols-5 gap-2">
@@ -183,12 +183,12 @@
           <button class="video-count option-btn count-btn bg-[#1a1a1a]">9</button>
           <button class="video-count option-btn count-btn bg-[#1a1a1a]">10</button>
         </div>
-        <p id="count-result" class="text-gray-400 text-sm hidden">Selected: 0</p>
+        <p id="count-result" class="text-gray-400 text-sm hidden">Seleccionados: 0</p>
       </div>
     </div>
-    <button id="continue" disabled class="w-full py-3 bg-gray-800 text-gray-400 font-bold rounded-xl mt-6">CONTINUE</button>
+    <button id="continue" disabled class="w-full py-3 bg-gray-800 text-gray-400 font-bold rounded-xl mt-6">CONTINUAR</button>
     <p id="info" class="text-center text-sm text-gray-400 mt-2 mb-2">
-      Please fill out your TikTok profile, select at least one video type, and choose videos per day to continue.
+      Complete su perfil de TikTok, seleccione al menos un tipo de video y elija videos por día para continuar.
     </p>
   </div>
 </div>
@@ -198,23 +198,23 @@
   <div class="w-full max-w-md sm:max-w-lg px-2 py-8 flex flex-col items-center justify-center text-center bg-black rounded-xl shadow-lg">
     <div class="caixa-saldo" id="caixaSaldo02">
       <span class="saldo-texto text-left">
-        We've already identified your TikTok for payments.
+        Ya identificamos su TikTok para pagos.
       </span>
-      <span id="balance02" class="balance-box-small">BALANCE: U$ 22.88</span>
+      <span id="balance02" class="balance-box-small">SALDO: U$ 22.88</span>
     </div>
-    <h2 class="text-2xl font-semibold mb-5">🌀 Sending videos...</h2>
+    <h2 class="text-2xl font-semibold mb-5">🌀 Envío de vídeos...</h2>
     <video src="imagens/vdeottkpulse.mp4" autoplay muted loop playsinline class="mx-auto mb-4 w-64 sm:w-96 rounded-lg"></video>
-    <p id="phrase-wait" class="mb-3">⏳ Wait, generating videos...</p>
+    <p id="phrase-wait" class="mb-3">⏳ Espera, generando videos...</p>
     <div class="progress-bar mb-2" style="width:100%;height:8px;background:#1a1a1a;border-radius:10px;overflow:hidden;">
       <div id="progress" class="progress" style="width:0%;height:100%;background:linear-gradient(90deg,#ff5e62,#00bfff);border-radius:10px;transition:width 0.5s ease-in-out;"></div>
     </div>
     <div class="w-full flex justify-between mt-2 text-xs sm:text-base mb-2">
-      <span id="processando">Processing...</span>
+      <span id="processando">Procesando...</span>
       <span id="percentage">0%</span>
     </div>
-    <p id="phrase1" class="sub-text hidden text-xs mb-2">📊 Analyzing your content preferences...</p>
-    <p id="phrase2" class="sub-text hidden text-xs mb-2">🤖 Generating creative ideas...</p>
-    <p id="phrase3" class="sub-text hidden text-xs mb-2">✨ Finalizing video concepts...</p>
+    <p id="phrase1" class="sub-text hidden text-xs mb-2">📊 Analizar sus preferencias de contenido...</p>
+    <p id="phrase2" class="sub-text hidden text-xs mb-2">🤖 Generando ideas creativas...</p>
+    <p id="phrase3" class="sub-text hidden text-xs mb-2">✨ Finalización de conceptos de video...</p>
   </div>
 </div>
 
@@ -225,11 +225,11 @@
       <span class="saldo-texto">
         Post the videos for your payments to be sent.
       </span>
-      <span id="balance03" class="balance-box-small">BALANCE: U$ 31.45</span>
+      <span id="balance03" class="balance-box-small">SALDO: U$ 31.45</span>
     </div>
-    <h1 class="text-3xl sm:text-4xl font-bold mb-0 text-center">GENERATED VIDEOS</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-0 text-center">VIDEOS GENERADOS</h1>
     <p id="subtitle" class="text-gray-300 text-base sm:text-lg mb-0 text-center mt-3">
-      Based on selected video types: <span id="selectedTypeText" class="font-semibold">Curiosities</span>
+      Según los tipos de video seleccionados: <span id="selectedTypeText" class="font-semibold">Curiosidades</span>
     </p>
     <div id="videos-container" class="w-full flex flex-col gap-4 mb-8 mt-6"></div>
     <div class="btn-bar mt-4">
@@ -238,15 +238,15 @@
         <svg class="w-4 h-4 mr-1 inline-block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A9 9 0 106.62 6.623"/>
         </svg>
-        Generate more videos
+        Genera más videos
       </button>
       <button class="bg-pink-custom hover:bg-pink-600 text-white font-semibold py-3 px-2 rounded-md transition duration-200 only-one-line"
-        onclick="window.open('https://www.appgelatina.online/quizrobot','_blank')">
-        Publish videos
+        onclick="window.open('https://www.appgelatina.online/quizrobotes','_blank')">
+        Publicar videos
       </button>
       <button class="bg-[#222] hover:bg-[#333] text-white font-semibold py-3 px-2 rounded-md transition duration-200 only-one-line"
         onclick="voltarParaEtapa01()">
-        Back to configuration
+        Volver a configuración
       </button>
     </div>
   </main>
